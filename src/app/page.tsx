@@ -1,14 +1,13 @@
 import Image from "next/image";
-import Homepage from "./pages/homepage/page";
+import Homepage from "./(pages)/homepage/page";
 
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0A4833]">
+    <main className="">
       <div className="w-full">
         <Homepage />
-      </div>
-      
+      </div> 
     </main>
   );
 }

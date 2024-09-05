@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { plusJakartaSans } from "../fonts";
+import { plusJakartaSans } from "../../fonts";
 
 import {
   Card,

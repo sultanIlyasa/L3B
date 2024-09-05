@@ -174,7 +174,7 @@ const Navbar = () => {
                       Company Partner
                     </Link>
                     <Link
-                      href="#"
+                      href={"/contact"}
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Work with Us!

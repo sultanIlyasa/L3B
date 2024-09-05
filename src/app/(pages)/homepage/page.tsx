@@ -173,7 +173,7 @@ const Homepage = () => {
               <Image
                 src={"/gojek.png"}
                 alt="logo"
-                className="md:w-[206px] md:h-[60px] w-[128px] h-[30px]"
+                className="md:w-[256px] md:h-[60px] w-[128px] h-[30px]"
                 width={256}
                 height={60}
               ></Image>
@@ -190,7 +190,7 @@ const Homepage = () => {
       </div>
       {/* Ticket Session */}
       <div className="relative w-full h-[300px] md:h-[600px] lg:h-[1000px]">
-        <div className="absolute inset-0 bg-[url('/bg-homepage.png')] bg-cover opacity-40"></div>
+        <div className="absolute inset-0 bg-[url('/homepage/bg-homepage.png')] bg-cover opacity-40"></div>
         <div className=" relative z-10 container mx-auto mt-10 pt-10 md:pt-40 lg:pt-80">
           <h1
             className={`text-[#F3E7D7] mx-auto text-3xl md:text-4xl lg:text-6xl font-bold text-center ${barlowCondensed.className}`}
@@ -204,7 +204,7 @@ const Homepage = () => {
           </p>
           <div className="flex flex-col items-center mt-10">
             {" "}
-            <Link href={"#"}>
+            <Link href={"https://www.loket.com/event/l3b2024"}>
               <button className=" bg-white text-black font-semibold py-2 px-5 rounded-full hover:bg-yellow-300 transition duration-300">
                 BELI TIKET SEKARANG
               </button>
@@ -212,8 +212,6 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-
-      
     </>
   );
 };
