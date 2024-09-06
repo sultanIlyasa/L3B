@@ -72,37 +72,37 @@ const Navbar = () => {
                 }`}
               >
                 <div className="w-full rounded-lg bg-[#F3E7D7] text-black shadow-lg">
-                  <div className="flex w-full flex-col items-start justify-center p-2">
+                  <nav className="flex w-full flex-col items-start justify-center p-2">
                     <Link
-                      href="#"
+                      href="/event#competition-info"
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Competition Information
                     </Link>
                     <Link
-                      href="#"
+                      href="/event#campaign-charity"
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Campaign & Charity
                     </Link>
                     <Link
-                      href="#"
+                      href="/event#race-rules"
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Race rules & Regulation
                     </Link>
                     <Link
-                      href="#"
+                      href="/event#faq"
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       FAQ
                     </Link>
-                  </div>
+                  </nav>
                 </div>
               </div>
 
               {/* Button Guide */}
-              <button
+              {/* <button
                 className="mx-2 rounded-3xl px-4 py-2 text-black outline outline-1 outline-black hover:bg-gray-200"
                 onClick={() => handleDropdownClick("guide")}
               >
@@ -137,25 +137,25 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Button Contact */}
               <button
-                 className="mx-2 rounded-3xl px-4 py-2 text-black outline outline-1 outline-black hover:bg-gray-200"
-                 onClick={() => handleDropdownClick("contact")}
+                className="mx-2 rounded-3xl px-4 py-2 text-black outline outline-1 outline-black hover:bg-gray-200"
+                onClick={() => handleDropdownClick("contact")}
               >
                 Contact
               </button>
               <div
-               className={`absolute left-[90%] top-full w-48 -translate-x-1/2 transform transition-all duration-300 ease-out ${
-                isDropdownOpen("contact")
-                  ? "opacity-100 translate-y-2"
-                  : "opacity-0 translate-y-0 pointer-events-none"
-              }`}
+                className={`absolute left-[90%] top-full w-48 -translate-x-1/2 transform transition-all duration-300 ease-out ${
+                  isDropdownOpen("contact")
+                    ? "opacity-100 translate-y-2"
+                    : "opacity-0 translate-y-0 pointer-events-none"
+                }`}
               >
                 <div className="w-full rounded-lg bg-[#F3E7D7] text-black shadow-lg">
                   <div className="flex w-full flex-col items-start justify-center p-2">
-                    <Link
+                    {/* <Link
                       href="#"
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
@@ -172,9 +172,9 @@ const Navbar = () => {
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Company Partner
-                    </Link>
+                    </Link> */}
                     <Link
-                      href="#"
+                      href={"/contact"}
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Work with Us!
@@ -223,29 +223,41 @@ const Navbar = () => {
                             Event
                           </AccordionTrigger>
                           <AccordionContent className="">
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href="/event#competition-info"
+                              className="hover:bg-gray-200 "
+                            >
                               Competition Information
                             </Link>
                           </AccordionContent>
                           <AccordionContent>
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href="/event#campaign-charity"
+                              className="hover:bg-gray-200 "
+                            >
                               Campaign & Charity
                             </Link>
                           </AccordionContent>
                           <AccordionContent>
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href="/event#race-rules"
+                              className="hover:bg-gray-200 "
+                            >
                               Race Rules & Regulation
                             </Link>
                           </AccordionContent>
                           <AccordionContent>
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href="/event#faq"
+                              className="hover:bg-gray-200 "
+                            >
                               FAQ
                             </Link>
                           </AccordionContent>
                         </AccordionItem>
 
                         {/* Accordion Guide */}
-
+                        {/* 
                         <AccordionItem value="item-2">
                           <AccordionTrigger>Guide</AccordionTrigger>
                           <AccordionContent className="">
@@ -263,24 +275,33 @@ const Navbar = () => {
                               City Guide
                             </Link>
                           </AccordionContent>
-                        </AccordionItem>
+                        </AccordionItem> */}
 
                         {/* Contact Accordion */}
 
-                        <AccordionItem value="item-3">
+                        <AccordionItem value="item-2">
                           <AccordionTrigger>Contact</AccordionTrigger>
-                          <AccordionContent className="">
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                          {/* <AccordionContent className="">
+                            <Link
+                              href={"/contact"}
+                              className="hover:bg-gray-200 "
+                            >
                               Sponsorship
                             </Link>
                           </AccordionContent>
                           <AccordionContent className="">
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href={"/contact"}
+                              className="hover:bg-gray-200 "
+                            >
                               Media Partners
                             </Link>
-                          </AccordionContent>
+                          </AccordionContent> */}
                           <AccordionContent className="">
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href={"/contact"}
+                              className="hover:bg-gray-200 "
+                            >
                               Work with Us
                             </Link>
                           </AccordionContent>

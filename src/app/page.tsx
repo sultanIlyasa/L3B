@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Homepage from "./pages/homepage/page";
+import Homepage from "./(pages)/homepage/page";
 
 
 export default function Home() {
@@ -8,7 +8,6 @@ export default function Home() {
       <div className="w-full">
         <Homepage />
       </div>
-      
     </main>
   );
 }
