@@ -4,10 +4,7 @@ import { plusJakartaSans, barlowCondensed } from "@/app/fonts";
 
 import {
   Card,
-  CardContent,
   CardDescription,
-  CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
@@ -18,57 +15,45 @@ export function CampaignCharity() {
       className={`${barlowCondensed.className} h-auto bg-[#0A4833] py-20 md:py-36 flex flex-col md:flex-row gap-5 mx-auto items-center justify-center`}
     >
       <div className="flex flex-col mx-auto justify-center items-center">
-        <Card className="bg-[#F3E7D7] w-[380px] md:w-[455px] h-auto rounded-3xl flex flex-col p-8 gap-3 md:gap-8">
-          <div className="mt-[54px] w-[350px] md:w-[395px] flex flex-col mx-auto justify-center items-center">
-            <div className="w-full">
-              <div className="bg-[#FCC612] w-[100px] md:w-[137px] h-[39px] rounded-t-lg "></div>
-            </div>
-            <div className="w-[350px] h-[274px] md:w-[395px] md:h-[304px] rounded-r-lg">
-              <img
-                src="/campaign.png"
-                alt="Mountain"
-                className="object-cover mx-auto"
+      <Card className="bg-[#F3E7D7] w-[380px] md:w-[455px] h-auto rounded-3xl flex flex-col p-8 gap-3 md:gap-8">
+        <div className="w-full flex flex-col items-center">
+          <div className="w-full">
+            <div className="bg-[#FCC612] w-[100px] md:w-[137px] h-[39px] rounded-t-lg"></div>
+          </div>
+          <div className="w-full h-[274px] md:h-[304px] relative overflow-hidden rounded-r-lg">
+            <Image
+              src="/campaign.png"
+              alt="Campaign"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col items-start w-full gap-4">
+          <h2 className="text-3xl">Campaign & Charity</h2>
+          <div className="flex items-center gap-5">
+            <svg
+              className="flex-shrink-0"
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse cx="25" cy="24.5" rx="25" ry="24.5" fill="#FCC612" />
+              <path
+                d="M34.3375 18.1217C33.6047 13.8158 29.996 10.4626 25.6424 10.0718C19.8599 9.54648 15.0056 14.0906 15.0056 19.7707C15.0056 21.0228 15.2498 22.2137 15.6834 23.3193H15.6772L15.6895 23.3437C15.9154 23.9116 21.4903 34.2031 23.7801 38.4113C24.1952 39.1747 25.2943 39.1747 25.7096 38.4113C27.9933 34.2031 33.5742 23.9116 33.8002 23.3437L33.8123 23.3193H33.8063C34.4169 21.7434 34.655 19.9784 34.3375 18.1217ZM24.7448 25.3042C21.6551 25.3042 19.1456 22.8 19.1456 19.7036C19.1456 16.607 21.6489 14.1027 24.7448 14.1027C27.8406 14.1027 30.3441 16.607 30.3441 19.7036C30.3441 22.8 27.8345 25.3042 24.7448 25.3042Z"
+                fill="#00160F"
               />
-            </div>
+            </svg>
+            <p className={`${plusJakartaSans.className} text-md md:text-xl `}>
+              Desa Sindangsari, Kabupaten Sumedang, Jawa Barat
+            </p>
           </div>
 
-          <div className="flex flex-col items-start w-[395px] mx-auto justify-center gap-4">
-            <h2 className="text-3xl">Campaign & Charity</h2>
-            <div className="flex items-center justify-center gap-5">
-              <svg
-                className="flex shrink-0"
-                width="50"
-                height="50"
-                viewBox="0 0 50 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <ellipse cx="25" cy="24.5" rx="25" ry="24.5" fill="#FCC612" />
-                <mask
-                  id="mask0_33_68"
-                  // style="mask-type:luminance"
-                  maskUnits="userSpaceOnUse"
-                  x="15"
-                  y="10"
-                  width="20"
-                  height="29"
-                >
-                  <path d="M15 10H34.5042V39H15V10Z" fill="white" />
-                </mask>
-                <g mask="url(#mask0_33_68)">
-                  <path
-                    d="M34.3375 18.1217C33.6047 13.8158 29.996 10.4626 25.6424 10.0718C19.8599 9.54648 15.0056 14.0906 15.0056 19.7707C15.0056 21.0228 15.2498 22.2137 15.6834 23.3193H15.6772L15.6895 23.3437C15.9154 23.9116 21.4903 34.2031 23.7801 38.4113C24.1952 39.1747 25.2943 39.1747 25.7096 38.4113C27.9933 34.2031 33.5742 23.9116 33.8002 23.3437L33.8123 23.3193H33.8063C34.4169 21.7434 34.655 19.9784 34.3375 18.1217ZM24.7448 25.3042C21.6551 25.3042 19.1456 22.8 19.1456 19.7036C19.1456 16.607 21.6489 14.1027 24.7448 14.1027C27.8406 14.1027 30.3441 16.607 30.3441 19.7036C30.3441 22.8 27.8345 25.3042 24.7448 25.3042Z"
-                    fill="#00160F"
-                  />
-                </g>
-              </svg>
-              <p className={`${plusJakartaSans.className} text-xl `}>
-                Desa Sindangsari, Kabupaten Sumedang, Jawa Barat
-              </p>
-            </div>
-
-            <div className="flex items-center justify-center gap-5">
-              <svg
+          <div className="flex items-center gap-5">
+          <svg
                 className="flex shrink-0"
                 width="50"
                 height="50"
@@ -136,13 +121,13 @@ export function CampaignCharity() {
                   fill="#00160F"
                 />
               </svg>
-              <p className={`${plusJakartaSans.className} text-xl`}>
-                Minggu, 10 November 2024
-              </p>
-            </div>
+              <p className={`${plusJakartaSans.className} text-md md:text-xl `}>
+              Minggu, 10 November 2024
+            </p>
           </div>
-        </Card>
-      </div>
+        </div>
+      </Card>
+    </div>
       <div className="flex flex-col gap-12 w-[380px] md:w-[824px] mx-auto justify-center items-center">
         <Card className="border-none bg-transparent">
           <CardTitle className="bg-[#FCC612] w-fit p-5 rounded-t-lg flex items-center justify-center">

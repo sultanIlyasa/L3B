@@ -43,8 +43,8 @@ const Contact = () => {
       </div>
 
       {/* Center Column */}
-      <Card className="bg-[#0A4833] border-none rounded-none m-auto items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2 text-white px-6 py-8 md:px-10 md:py-20 w-[352px] h-[402px] md:w-[490px] md:h-[553px]">
-        <CardHeader>
+      <Card className="bg-[#0A4833] border-none rounded-none m-auto items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2 text-white px-6 py-8 md:px-10 md:py-20 w-[352px] md:w-[490px] h-fit ">
+        <CardHeader className="p-0">
           <CardTitle className="text-2xl md:text-[32px] md:leading-[38px]">
             Kesempatan
             <br />

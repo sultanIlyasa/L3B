@@ -7,11 +7,11 @@ import { FaqComponent } from "@/components/FaqComponent";
 
 const Event = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="overflow-hidden">
       <section id="competition-info" className="py-12">
         <CategoryInfo />
       </section>
-      <section id="campaign-charity" className="py-12">
+      <section id="campaign-charity" className="py-12 ">
         <CampaignCharity />
       </section>
       <section id="race-rules" className="py-12">

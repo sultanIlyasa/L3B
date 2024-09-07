@@ -42,16 +42,22 @@ const Navbar = () => {
       <div className="fixed top-[30px] z-[100] flex w-full px-10 lg:px-20">
         <div className="relative flex w-full items-center justify-between rounded-full bg-[#F3E7D7] md:p-3  ">
           {/* LOGO */}
-          <div>
+          <div className="flex flex-row">
             <Link href={"/"} onClick={() => setOpen(false)}>
               <Image
                 src={"/logo-light.png"}
                 alt="logo"
-                className=""
+                className="py-3 md:py-0"
                 width={70}
                 height={32}
               ></Image>
             </Link>
+            <div className="mx-auto py-5 md:py-2 text-sm md:text-lg">
+              <h1>
+                <span className="font-bold ">Lomba Lintas Lembah dan Bukit</span>{" "}
+                <br /> 2024
+              </h1>
+            </div>
           </div>
           {/* Right Menu */}
           {/* Desktop Mode */}

@@ -131,7 +131,7 @@ const Homepage = () => {
           </div>
           <div className="flex container">
             <article className="mx-auto items-center lg:my-auto md:text-left text-[#F3E7D7]">
-              <h2>Trail Run and Fun Run</h2>
+              <h2 className="text-center md:text-left">Trail Run and Fun Run</h2>
               <h1
                 className={`mx-auto text-2xl md:text-4xl font-bold text-center md:text-left ${barlowCondensed.className}`}
               >
@@ -167,7 +167,7 @@ const Homepage = () => {
           </div>
           <div className="flex container">
             <article className="mx-auto items-center lg:my-auto md:text-left text-[#F3E7D7]">
-              <h2>Closing</h2>
+              <h2 className="text-center md:text-left">Closing</h2>
               <h1
                 className={`mx-auto text-2xl md:text-4xl font-bold text-center md:text-left ${barlowCondensed.className}`}
               >
@@ -215,7 +215,7 @@ const Homepage = () => {
         </div>
       </div>
       {/* Ticket Session */}
-      <div className="relative w-full h-[300px] md:h-[600px] lg:h-[1000px]">
+      <div className="relative w-full h-[400px] md:h-[600px] lg:h-[1000px]">
         <div className="absolute inset-0 bg-[url('/bg-homepage.png')] bg-cover opacity-40"></div>
         <div className=" relative z-10 container mx-auto mt-10 pt-10 md:pt-40 lg:pt-80">
           <h1
@@ -223,14 +223,14 @@ const Homepage = () => {
           >
             SIAP UNTUK JELAJAHI INDAHNYA <br /> GUNUNG MANGLAYANG?
           </h1>
-          <p className="text-[#F3E7D7] text-center justify-center lg:text-xl">
+          <p className="text-[#F3E7D7] text-center justify-center lg:text-xl mt-6">
             Nikmati pengalaman lari melintasi lembah dan bukit, dan jadilah
             bagian dari aksi <br />
             penghijauan bumi bersama L3B.
           </p>
           <div className="flex flex-col items-center mt-10">
             {" "}
-            <Link href={"#"}>
+            <Link href={"https://www.loket.com/event/l3b2024"}>
               <button className=" bg-white text-black font-semibold py-2 px-5 rounded-full hover:bg-yellow-300 transition duration-300">
                 BELI TIKET SEKARANG
               </button>

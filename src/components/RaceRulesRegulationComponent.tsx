@@ -291,8 +291,8 @@ export function RaceRulesRegulationComponent() {
 
       {/* Tombol selengkapnya */}
       {!isExpanded && (
-        <div className="relative w-full h-96 -top-96 left-1/2 transform -translate-x-1/2 ">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0A4833]/0 via-[#0A4833]/2 to-[#0A4833]"></div>
+        <div className="relative w-full -top-96 left-1/2 transform -translate-x-1/2 ">
+          <div className="absolute inset-0 h-96 bg-gradient-to-b from-[#0A4833]/0 via-[#0A4833]/2 to-[#0A4833]"></div>
           <div className="text-center relative z-10 top-96 left-1/2 transform -translate-x-1/2">
             <button
               onClick={toggleExpand}
