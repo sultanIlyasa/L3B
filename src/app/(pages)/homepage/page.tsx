@@ -22,13 +22,12 @@ const Homepage = () => {
   return (
     <>
       <div className="container overflow-hidden">
-        <div className="pt-36 mx-auto flex flex-col lg:flex-row items-center">
+        <div className="pt-52 mx-auto flex flex-col lg:flex-row items-center">
           {/* Hero Section */}
-
           {/* Left side content */}
-          <div className="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
+          <div className="lg:w-1/2 lg:pr-20 mb-8 lg:mb-0 z-10">
             <h1 className=" text-white text-4xl md:text-5xl font-bold mb-4">
-              SATU LANGKAHKU, HIJAU BUMIKU
+              SATU LANGKAHKU, <br /> HIJAU BUMIKU
             </h1>
             <p className="text-white text-lg mb-6 text-justify">
               Lomba Lintas Lembah dan Bukit (L3B) hadir membawa misi untuk
@@ -42,29 +41,112 @@ const Homepage = () => {
               Selengkapnya
             </button>
           </div>
-
           {/* Right side grid */}
-          <div className="lg:w-1/2 grid grid-cols-3 gap-4">
-            {imageData.map((image: ImageData, index: number) => {
-              const rotation = index % 2 === 0 ? "rotate-6" : "-rotate-6";
-              return (
-                <div
-                  key={image.id}
-                  className={`bg-white/20 aspect-square rounded-lg transform ${rotation} transition duration-300 ease-in-out hover:scale-105 hover:rotate-0 overflow-hidden`}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-              );
-            })}
+          <div className="lg:absolute lg:right-0 lg:inset-y-0  lg:ml-24 lg:pl-24 grid grid-cols-3 gap-4 lg:gap-10 transform lg:rotate-11 z-0 lg:overflow-hidden mt-8 lg:mt-0">
+            {/* Row 1 */}
+            <div className="flex flex-col rotate-12 gap-4">
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_8.png"
+                  alt="Image 8"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_4.png"
+                  alt="Image 4"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_1.png"
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+            </div>
+            {/* Row 2 */}
+            <div className="flex flex-col rotate-12 gap-4">
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_6.png"
+                  alt="Image 6"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_5.png"
+                  alt="Image 5"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_2.png"
+                  alt="Image 2"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+            </div>
+            {/* Row 3 */}
+            <div className="flex flex-col rotate-12 gap-4">
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_1.png"
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_2.png"
+                  alt="Image 2"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+              <div className="w-24 h-36 md:w-[292px] md:h-[371px] overflow-hidden rounded-lg">
+                <Image
+                  src="/homepage/img_3.png"
+                  alt="Image 3"
+                  className="w-full h-full object-cover"
+                  width={292}
+                  height={371}
+                  quality={90}
+                />
+              </div>
+            </div>
           </div>
         </div>
         {/* Mandala kretabumi  */}
-        <div ref={mandalaRef} className=" flex mx-auto w-full mt-12">
-          <div className="mx-auto w-[450px] md:w-full p-6 md:p-36 lg:p-48 bg-[url('/mandala.png')] bg-center bg-cover rounded-3xl">
+        <div ref={mandalaRef} className=" flex mx-auto w-full mt-40 pt-40">
+          <div className="mx-auto w-[450px] md:w-full p-6 md:p-36 lg:p-48 bg-[url('/mandala.png')] bg-center bg-cover rounded-3xl z-30">
             <h1
               className={`mx-auto text-2xl text-white md:text-4xl font-bold text-center ${barlowCondensed.className}`}
             >
@@ -131,7 +213,9 @@ const Homepage = () => {
           </div>
           <div className="flex container">
             <article className="mx-auto items-center lg:my-auto md:text-left text-[#F3E7D7]">
-              <h2 className="text-center md:text-left">Trail Run and Fun Run</h2>
+              <h2 className="text-center md:text-left">
+                Trail Run and Fun Run
+              </h2>
               <h1
                 className={`mx-auto text-2xl md:text-4xl font-bold text-center md:text-left ${barlowCondensed.className}`}
               >
