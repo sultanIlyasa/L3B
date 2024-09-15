@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <header className="flex w-full">
       <div className="fixed top-[30px] z-[100] flex w-full px-10 lg:px-20">
-        <div className="relative flex w-full items-center justify-between rounded-full bg-[#F3E7D7] md:p-3  ">
+        <div className="relative flex w-full items-center justify-between rounded-full bg-[#F3E7D7] md:p-3 shadow-2xl ">
           {/* LOGO */}
           <div className="flex flex-row">
             <Link href={"/"} onClick={() => setOpen(false)}>

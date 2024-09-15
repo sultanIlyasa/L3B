@@ -19,15 +19,16 @@ const Contact = () => {
         {/* Left column */}
         <div className="w-full md:w-1/2 relative p-8 md:p-0 ">
           <div className="w-full md:w-[239px] mx-auto md:ml-32 md:absolute md:top-1/2 md:-translate-y-1/2">
-            <h2 className="text-xl md:text-2xl font-medium text-center mb-4">
-              Dikelola Oleh
+            <h2 className="pt-12 mt-12 text-xl md:text-2xl font-medium text-center ">
+              Dinaungi Oleh
             </h2>
             <Image
               src="/bemf.png"
               alt="BEM Logo"
               width={239}
               height={208}
-              className="mx-auto"
+              quality={100}
+              className="mx-auto mt-0 pt-0"
             />
           </div>
         </div>
