@@ -55,9 +55,9 @@ const WhatsAppContactList: React.FC<WhatsAppContactListProps> = ({
 // Example usage
 const WhatsappLink: React.FC = () => {
   const contactList: Contact[] = [
-    { role: "Sponsorship", phoneNumber: "0821-7352-5786", name: "Herlendia" },
-    { role: "Media partner", phoneNumber: "0878-8920-2987", name: "Ratna" },
-    { role: "Community partner", phoneNumber: "0821-1900-9644", name: "Alifa" },
+    { role: "Sponsorship", phoneNumber: "6282173525786", name: "Herlendia" },
+    { role: "Media partner", phoneNumber: "6287889202987", name: "Ratna" },
+    { role: "Community partner", phoneNumber: "62082119009644", name: "Alifa" },
   ];
 
   return <WhatsAppContactList contacts={contactList} />;

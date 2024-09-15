@@ -54,7 +54,9 @@ const Navbar = () => {
             </Link>
             <div className="mx-auto py-5 md:py-2 text-sm md:text-lg">
               <h1>
-                <span className="font-bold ">Lomba Lintas Lembah dan Bukit</span>{" "}
+                <span className="font-bold ">
+                  Lomba Lintas Lembah dan Bukit
+                </span>{" "}
                 <br /> 2024
               </h1>
             </div>
@@ -108,42 +110,42 @@ const Navbar = () => {
               </div>
 
               {/* Button Guide */}
-              {/* <button
+              <button
                 className="mx-2 rounded-3xl px-4 py-2 text-black outline outline-1 outline-black hover:bg-gray-200"
                 onClick={() => handleDropdownClick("guide")}
               >
                 Guide
               </button>
               <div
-               className={`absolute left-2/3 top-full w-48 -translate-x-1/2 transform transition-all duration-300 ease-out ${
-                isDropdownOpen("guide")
-                  ? "opacity-100 translate-y-2"
-                  : "opacity-0 translate-y-0 pointer-events-none"
-              }`}
+                className={`absolute left-2/3 top-full w-48 -translate-x-1/2 transform transition-all duration-300 ease-out ${
+                  isDropdownOpen("guide")
+                    ? "opacity-100 translate-y-2"
+                    : "opacity-0 translate-y-0 pointer-events-none"
+                }`}
               >
                 <div className="w-full rounded-lg bg-[#F3E7D7] text-black shadow-lg">
                   <div className="flex w-full flex-col items-start justify-center p-2">
                     <Link
-                      href="#"
+                      href={"/guide/akomodasi"}
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Accomodation
                     </Link>
                     <Link
-                      href="#"
+                      href={"/guide/transportation"}
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       Transportation
                     </Link>
                     <Link
-                      href="#"
+                      href={"/guide/city-guide"}
                       className="hover:bg-gray-200 transition duration-200 w-full p-2 rounded text-sm"
                     >
                       City Guide
                     </Link>
                   </div>
                 </div>
-              </div> */}
+              </div>
 
               {/* Button Contact */}
               <button
@@ -263,25 +265,34 @@ const Navbar = () => {
                         </AccordionItem>
 
                         {/* Accordion Guide */}
-                        {/* 
+
                         <AccordionItem value="item-2">
                           <AccordionTrigger>Guide</AccordionTrigger>
                           <AccordionContent className="">
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href={"/guide/akomodasi"}
+                              className="hover:bg-gray-200 "
+                            >
                               Accomodation
                             </Link>
                           </AccordionContent>
                           <AccordionContent className="">
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href={"/guide/transportation"}
+                              className="hover:bg-gray-200 "
+                            >
                               Transportation
                             </Link>
                           </AccordionContent>
                           <AccordionContent className="">
-                            <Link href={"#"} className="hover:bg-gray-200 ">
+                            <Link
+                              href={"/guide/city-guide"}
+                              className="hover:bg-gray-200 "
+                            >
                               City Guide
                             </Link>
                           </AccordionContent>
-                        </AccordionItem> */}
+                        </AccordionItem>
 
                         {/* Contact Accordion */}
 
