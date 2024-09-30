@@ -296,7 +296,7 @@ const Navbar = () => {
 
                         {/* Contact Accordion */}
 
-                        <AccordionItem value="item-2">
+                        <AccordionItem value="item-3">
                           <AccordionTrigger>Contact</AccordionTrigger>
                           {/* <AccordionContent className="">
                             <Link

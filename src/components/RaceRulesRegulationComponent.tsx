@@ -33,7 +33,7 @@ export function RaceRulesRegulationComponent() {
       <div className="bg-[#0D6A48] h-auto rounded-t-[100px] text-[#F3E7D7]">
         <div className="mx-auto flex flex-col items-center justify-center gap-3 pt-14 font-bold">
           <h2 className={`${barlowCondensed.className} text-3xl md:text-5xl`}>
-            Fun Run
+            Trail Run
           </h2>
           <div
             className={`${plusJakartaSans.className} flex gap-10 md:gap-40 text-base md:text-[28px]`}
@@ -56,7 +56,7 @@ export function RaceRulesRegulationComponent() {
         </div>
         <div className="mx-auto flex flex-col items-center justify-center gap-4 md:gap-8 py-14 font-bold">
           <h2 className={`${barlowCondensed.className} text-3xl md:text-5xl`}>
-            Trail Run
+            Fun Run
           </h2>
           <div
             className={`${plusJakartaSans.className} grid grid-cols-2 md:grid-cols-4 grid-rows-2 justify-center items-center text-center gap-2 md:gap-10 text-base md:text-[28px]`}
@@ -157,9 +157,9 @@ export function RaceRulesRegulationComponent() {
         <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
           <ol className="list-decimal space-y-0 pl-7 pr-1">
             <li>
-              Kategori <em>Trail Run</em> (21,7 km) terbuka untuk peserta umum
-              (pria & wanita). Sehat jasmani berusia di atas 17 tahun, batas
-              maksimum umur 50 tahun, dan sebaiknya pernah mengikuti lomba lari.
+              Kategori <em>Trail Run</em> (21,4km) terbuka untuk peserta umum
+              (pria & wanita) berusia 17-50 tahun dan sebaiknya pernah mengikuti
+              lomba lari.
               <br />
               Sub-Kategori:
               <ul className="list-disc pl-5 mt-2">
@@ -168,107 +168,29 @@ export function RaceRulesRegulationComponent() {
               </ul>
             </li>
             <li>
-              Peserta <strong>WAJIB</strong> menggunakan sepatu dan celana
-              olahraga.
+              Mengikuti instruksi panitia untuk menjaga keamanan selama di jalur
+              lari yang ditentukan
             </li>
             <li>
-              Apabila terdapat peserta yang sakit selama lari berlangsung, maka
-              peserta mengizinkan staf medis untuk memberikan penanganan yang
-              diperlukan untuk perawatan pasien.
+              Setiap peserta wajib berkonsultasi dengan dokter/medical check-up
+              sebelum mengikuti lomba.
             </li>
             <li>
-              Wajib memahami dan mengikuti instruksi panitia dalam hal melakukan
-              kegiatan lari dengan aman selama berada di jalur lari yang telah
-              ditentukan panitia.
+              Setiap peserta mengetahui cara mengatasi masalah fisik atau mental
+              akibat kelelahan, masalah pencernaan, nyeri otot atau sendi, dan
+              penyakit ringan saat sendiri. Keselamatan pribadi berada di tangan
+              peserta itu sendiri untuk mengantisipasi dan menyesuaikan diri
+              dengan potensi masalah. Panitia medic kami akan selalu tersedia di
+              titik-titik tertentu.
             </li>
             <li>
-              Penyelenggara berhak merubah aturan kapan saja bilamana dianggap
-              perlu dan sesuai dengan keadaan, baik sebelum dan pada saat{" "}
-              <em>trail run</em> berlangsung tanpa pemberitahuan terlebih dahulu
-              beserta alasannya.
+              Penyelenggara berhak merubah aturan kapan saja jika diperlukan,
+              dan setiap perubahan akan diberitahukan kepada peserta melalui
+              akun Instagram resmi kami setelahnya.
             </li>
             <li>
-              Untuk kelancaran acara dan kenyamanan berlari, peserta harus
-              mengetahui betul kondisi kesehatannya saat akan berlari dan
-              diwajibkan telah melakukan konsultasi kesehatan dengan dokter/
-              <em>medical check-up</em> sebelum mengikuti kegiatan lomba.
-            </li>
-            <li>
-              Risiko cedera kesehatan akibat berlari yang disebabkan peserta
-              melanggar anjuran pihak dokter/medis bukan merupakan tanggung
-              jawab penyelenggara.
-            </li>
-            <li>Budayakan 5S (Senyum, Sapa, Salam, Sopan, dan Santun).</li>
-            <li>
-              Membuang sampah pada tempat yang telah disediakan (berupa{" "}
-              <em>trash bag</em> di setiap <em>water and food station</em>).
-            </li>
-            <li>Membawa obat-obatan pribadi.</li>
-            <li>
-              Memiliki asuransi kecelakaan atau kesehatan selama peserta
-              mengikuti lomba.
-            </li>
-            <li>
-              Membawa hasil <em>medical check up</em> pada saat pengambilan race
-              pack.
-            </li>
-            <li>
-              Membawa perlengkapan ketika kegiatan lomba berlangsung, yang
-              terdiri dari;
-              <ul className="list-disc pl-5 mt-2">
-                <li>
-                  <strong>RUTE</strong> (mohon untuk mengunduh file gpx yang
-                  disediakan penyelenggara di situs kegiatan dan mencetak rute
-                  yang disediakan)
-                </li>
-                <li>
-                  <strong>Hidrasi</strong> (<em>soft flask</em>/botol terisi
-                  minimal 250 mL setiap meninggalkan WS)
-                </li>
-                <li>
-                  <strong>
-                    BIB <em>number</em>
-                  </strong>
-                </li>
-                <li>
-                  <strong>Makanan ringan</strong>
-                </li>
-                <li>
-                  <strong>
-                    <em>Jersey</em> lari
-                  </strong>
-                </li>
-                <li>
-                  <strong>
-                    <em>Vest bag</em>
-                  </strong>
-                </li>
-                <li>
-                  <strong>Obat-obatan dalam keadaan darurat</strong> (obat
-                  merah, nyeri otot, plester, dll).
-                </li>
-                <li>
-                  <strong>Uang tunai secukupnya</strong>
-                </li>
-                <li className="text-left">
-                  <strong>
-                    <em>Device</em> jalur
-                  </strong>{" "}
-                  (smartwatch/gadget)
-                </li>
-                <li>
-                  <strong>Jas hujan</strong> (kondisi jika terjadi hujan) atau
-                  jaket tahan air
-                </li>
-                <li>
-                  <strong>Peluit</strong>
-                </li>
-                <li>
-                  <strong>
-                    Alumunium foil atau <em>survival blanket</em>
-                  </strong>
-                </li>
-              </ul>
+              Informasi pengambilan race pack akan diinfokan di Instagram resmi
+              kami.
             </li>
           </ol>
           <div className="bg-[#F3E7D7] text-[#0A4732] font-semibold px-6 md:px-9 py-3 md:py-5 mt-5 rounded-[20px]">
@@ -307,106 +229,340 @@ export function RaceRulesRegulationComponent() {
       {/* Konten tambahan yang akan muncul ketika tombol ditekan */}
       {isExpanded && (
         <>
+          {/* Section Requirements */}
           <section
-            id="section-partisipasi"
+            id="section-requirements"
             className="text-[#F3E7D7] w-full px-5 md:px-10 pb-14"
           >
             <div className="flex items-center justify-center gap-3 pb-7">
-              <h3 className="text-2xl md:text-4xl">Partisipasi</h3>
+              <h3 className="text-2xl md:text-4xl">Requirements</h3>
+              <div className="w-full h-2 bg-gradient-to-r from-[#F3E7D7] to-transparent "></div>
+            </div>
+            <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
+              <ol className="list-decimal space-y-0 pl-7 pr-1">
+                <li>Umur 17-50 tahun, dalam kondisi sehat jasmani.</li>
+                <li>
+                  Membawa peralatan pribadi:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      Membawa obat-obatan pribadi. Panitia tidak bertanggung
+                      jawab atas cedera akibat melanggar anjuran medis.
+                    </li>
+                    <li>
+                      <strong>WAJIB</strong> membawa hasil{" "}
+                      <em>medical check-up</em>
+                      (surat keterangan sehat) pada saat pengambilan{" "}
+                      <em>race pack</em>.
+                    </li>
+                    <li>
+                      Memiliki asuransi kecelakaan atau kesehatan selama
+                      mengikuti lomba.
+                    </li>
+                    <li>
+                      Membawa <em>mandatory gear</em> selama lomba (kami
+                      sebutkan di bawah) untuk kelengkapan dan keselamatan
+                      peserta.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Kesehatan:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      Disarankan memiliki pengalaman mengikuti lomba lari.
+                    </li>
+                    <li>
+                      Konsultasi kesehatan dengan dokter sangat disarankan
+                      sebelum berlari.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Etika dan Tanggung Jawab:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      Membudayakan 5S (Senyum, Sapa, Salam, Sopan, dan Santun).
+                    </li>
+                    <li>Membuang sampah pada tempat yang telah disediakan.</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          {/* Section Race Rules */}
+          <section
+            id="section-race-rules"
+            className="text-[#F3E7D7] w-full px-5 md:px-10 pb-14"
+          >
+            <div className="flex items-center justify-center gap-3 pb-7">
+              <h3 className="text-2xl md:text-4xl">Race Rules</h3>
               <div className="w-full h-2 bg-gradient-to-r from-[#F3E7D7] to-transparent "></div>
             </div>
             <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
               <ol className="list-decimal space-y-0 pl-7 pr-1">
                 <li>
-                  <strong>KEDATANGAN</strong> peserta pukul 05.00 WIB di
-                  Fakultas Pertanian Unpad Jatinangor.
-                </li>
-                <li>
-                  Untuk Peserta yang menginap di Kampus Fakultas Pertanian Unpad
-                  <strong>DIHARAPKAN</strong> bangun sebelum pukul 05.00 WIB.
-                </li>
-                <li>
-                  Dilaksanakan <strong>PEMANASAN</strong> dan{" "}
-                  <strong>PEMAHAMAN DASAR</strong> tentang lomba.
-                </li>
-                <li>
-                  Peserta <em>Trail Run</em> akan diberangkatkan secara{" "}
-                  <strong>SERENTAK</strong> baik
-                  <strong>PELAJAR/UMUM</strong>.
-                </li>
-                <li>Peserta akan melewati jalur sepanjang 21,7 km.</li>
-                <li>
-                  Selama perjalanan, peserta akan melewati Pos{" "}
-                  <strong>CHECKPOINT & FOOD STATION</strong>
+                  Kedatangan dan Persiapan:
                   <ul className="list-disc pl-5 mt-2">
-                    <li>Terdapat 2 Pos Checkpoint, di KM 7 dan KM 14.</li>
                     <li>
-                      Peserta akan menerima <strong>GELANG CHECKPOINT</strong>{" "}
-                      di setiap POS-nya.
+                      Race village dibuka dari jam 3.30 WIB. Peserta harus tiba
+                      di Fakultas Pertanian Unpad Jatinangor paling lambat pukul
+                      05.00 WIB. Start/Flag off di jam 05.30 WIB. .
                     </li>
                     <li>
-                      <strong>GELANG</strong> berguna agar{" "}
-                      <strong>PANITIA</strong> mengetahui bahwa{" "}
-                      <strong>PESERTA</strong>
-                      benar-benar melewati <strong>JALUR</strong> yang telah
-                      ditetapkan <strong>PANITIA</strong>.
+                      Disediakan tempat menginap sederhana di Fakultas
+                      Pertanian, UNPAD. Bagi peserta yang menginap, diharapkan
+                      bangun sebelum pukul 05.00 WIB.
                     </li>
                     <li>
-                      Apabila peserta tidak memiliki salah satu{" "}
-                      <strong>GELANG</strong> tersebut, maka akan dianggap{" "}
-                      <strong>
-                        PESERTA TIDAK MELEWATI JALUR YANG TELAH DISIAPKAN
-                      </strong>
-                      . Hal ini akan berpengaruh pada saat peserta melewati
-                      garis <strong>FINISH</strong>, di mana jika{" "}
-                      <strong>GELANG</strong> tidak lengkap, maka{" "}
-                      <strong>PESERTA DINYATAKAN TIDAK MENANG</strong>.
-                    </li>
-                    <li>
-                      Water and food station berada di KM 2,3; 6,1; 8; 10,8;
-                      13,5;17,3; 19,5.
+                      Dilakukan pemanasan dan pengarahan dasar tentang lomba
+                      sebelum dimulai.
                     </li>
                   </ul>
                 </li>
                 <li>
-                  Pos Medik berada di KM 0,04; 2,2; 4,3; 6,9; 9; 10,8; 11,6;
-                  12,3; 14; 15,9; 17,6; 19,5.
+                  Pelaksanaan Lomba:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Peserta diberangkatkan secara serentak.</li>
+                    <li>Peserta akan melewati jalur sepanjang 21,7 km.</li>
+                    <li>Terdapat 2 pos checkpoint di KM 6,7 dan 15,0</li>
+                    <li>
+                      Peserta menerima gelang di setiap pos checkpoint. Jika
+                      peserta tidak memiliki gelang checkpoint, peserta dianggap
+                      tidak melewati jalur yang telah ditentukan dan dinyatakan
+                      tidak menyelesaikan race
+                    </li>
+                    <li>
+                      {" "}
+                      Panitia dapat memeriksa perlengkapan pelari secara acak.
+                      Jika terdapat pelari yang tidak membawa{" "}
+                      <em>mandatory gear</em>, maka jika terjadi sesuatu hal
+                      yang tidak diinginkan dari peserta tidak menjadi tanggung
+                      jawab penuh panitia
+                    </li>
+                    <li>
+                      Jika berhasil menyelesaikan lomba sebelum COT berakhir,
+                      pelari akan mendapatkan medali finisher
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  Jika selama kegiatan lomba berlangsung, mengetahui peserta
-                  yang mengalami keadaan yang tidak diinginkan, seperti cedera
-                  sehingga peserta kesulitan untuk menggerakkan badannya, mohon
-                  untuk memprioritaskan peserta tersebut dan mengantarkan ke
-                  tempat petugas atau marshal terdekat. Tim medis dan tim
-                  penyelamatan memiliki kewenangan untuk menghentikan peserta
-                  dari melanjutkan lomba. Ini akan dilakukan dengan melepas atau
-                  mencoret <strong>BIB</strong>.
+                  Larangan:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Tidak diperkenankan membawa binatang peliharaan.</li>
+                    <li>
+                      Dilarang memotong jalur, jika terjadi peserta akan
+                      didiskualifikasi.
+                    </li>
+                    <li>
+                      Apabila tersesat, peserta harus kembali ke marka terakhir
+                      yang dilihat.
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  Tidak diperkenankan membawa binatang peliharaan selama
-                  melakukan kegiatan kegiatan ini.
+                  Batas Waktu:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li> Cut-off time (COT) yang diberikan adalah 5,5 jam.</li>
+                    <li>
+                      Peserta yang melebihi batas waktu tidak mendapatkan medali
+                      finisher.
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  Apabila <strong>TERSESAT</strong>, <strong>KEMBALI</strong> ke{" "}
-                  <strong>MARKA TERAKHIR</strong> yang dilihat.
+                  Penilaian
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      {" "}
+                      Berdasarkan kecepatan dan jumlah gelang checkpoint yang
+                      dikumpulkan.
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  Apabila <strong>MEMOTONG JALUR</strong> Peserta akan{" "}
-                  <strong>DIDISKUALIFIKASI</strong>.
+                  Sanksi dan Diskualifikasi
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      {" "}
+                      Mengambil jalan pintas <strong>[Diskualifikasi]</strong>
+                    </li>
+                    <li>
+                      {" "}
+                      Menolak mengikuti perintah dari pengawas lomba, petugas
+                      lomba, kepala pos, tim medis atau penyelamat{" "}
+                      <strong>[Diskualifikasi]</strong>
+                    </li>
+                    <li>
+                      {" "}
+                      Mencurangi (misalnya menggunakan moda transportasi dalam
+                      lomba) <strong>[Diskualifikasi]</strong>
+                    </li>
+                    <li>
+                      {" "}
+                      Tidak menghormati orang lain (anggota panitia atau pelari
+                      lain) <strong>[Penalti 30 menit]</strong>
+                    </li>
+                    <li>
+                      {" "}
+                      Kehilangan nomor peserta lomba selama lomba{" "}
+                      <strong>[Penalti 30 menit]</strong>
+                    </li>
+                  </ul>
                 </li>
-                <li>Marka menggunakan shrink line.</li>
+              </ol>
+            </div>
+          </section>
+
+          {/* Section Mandatory Gear */}
+          <section
+            id="section-mandatory-gear"
+            className="text-[#F3E7D7] w-full px-5 md:px-10 pb-14"
+          >
+            <div className="flex items-center justify-center gap-3 pb-7">
+              <h3 className="text-2xl md:text-4xl">Mandatory Gear</h3>
+              <div className="w-full h-2 bg-gradient-to-r from-[#F3E7D7] to-transparent "></div>
+            </div>
+            <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
+              <ol className="list-decimal space-y-0 pl-7 pr-1">
                 <li>
-                  Lamanya <strong>COT</strong> yang <strong>PANITIA</strong>{" "}
-                  berikan adalah 4,5 jam.
+                  Peserta wajib membawa perlengkapan berikut saat lomba
+                  berlangsung untuk perlengkapan dan keselamatan peserta:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      Rute: Mengunduh file GPX yang disediakan dan mencetak peta
+                      rute.{" "}
+                      <a
+                        href="https://drive.google.com/file/d/1ZFw3h2965VnJj6SIDoDL4Qf7TiO4IOAt/view?usp=share_link"
+                        className="underline"
+                      >
+                        Download gpx klik ini
+                      </a>
+                    </li>
+                    <li>
+                      Soft flask/botol ringan dengan kapasitas minimal 250 mL
+                      setiap meninggalkan water station (WS).
+                    </li>
+                    <li>
+                      Makanan/gel/batangan/dll (sesuai selera pelari) untuk
+                      kebutuhan nutrisi selama lomba.
+                    </li>
+                    <li>
+                      Jersey dari panitia dan sepatu yang sesuai untuk jalur
+                      lomba.
+                    </li>
+                    <li>Vest Bag: Tas untuk menyimpan perlengkapan wajib.</li>
+                    <li>
+                      Medical kit menyesuaikan kebutuhan pribadi:
+                      Plester/perban, antiseptik/betadine, obat-obatan pribadi.
+                    </li>
+                    <li>
+                      Device Jalur: Smartwatch atau gadget untuk navigasi.
+                    </li>
+                    <li>Jas Hujan/Jaket tahan air dan tahan angin.</li>
+                    <li>Peluit.</li>
+                    <li>Alumunium Foil atau Survival Blanket.</li>
+                  </ul>
+                </li>
+              </ol>
+              <div className="bg-[#F3E7D7] text-[#0A4732] font-semibold px-6 md:px-9 py-3 md:py-5 mt-5 rounded-[20px]">
+                <h5 className="text-xl font-extrabold md:text-[30px]">
+                  Catatan
+                </h5>
+                <ul className="list-disc pl-5 mt-2 text-base md:text-[22px] leading-10">
+                  <li>
+                    Pengecekan perlengkapan akan dilakukan secara acak selama
+                    acara. Jika terdapat pelari yang tidak membawa{" "}
+                    <em>mandatory gear</em>, maka jika terjadi sesuatu hal yang
+                    tidak diinginkan dari peserta tidak menjadi tanggung jawab
+                    penuh panitia. Barang yang tidak ada dalam daftar bersifat
+                    opsional.{" "}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Section Safety and Medical Aid */}
+          <section
+            id="section-safety-medical"
+            className="text-[#F3E7D7] w-full px-5 md:px-10 pb-14"
+          >
+            <div className="flex items-center justify-center gap-3 pb-7">
+              <h3 className="text-2xl md:text-4xl">Safety and Medical Aid</h3>
+              <div className="w-full h-2 bg-gradient-to-r from-[#F3E7D7] to-transparent "></div>
+            </div>
+            <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
+              <ol className="list-decimal space-y-0 pl-7 pr-1">
+                <li>
+                  Pos Medik:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Pos medik tersedia di KM 3,4 | 11,4 | dan 20,7</li>
+                  </ul>
                 </li>
                 <li>
-                  Apabila <strong>MELEBIHI</strong> 4,5 jam, maka peserta{" "}
-                  <strong>TIDAK</strong> mendapatkan{" "}
-                  <strong>MEDALI FINISHER</strong>.
+                  Jika kondisi kesehatan peserta tidak memungkinkan untuk
+                  melanjutkan, panitia tim medis berhak memberikan tindakan yang
+                  diperlukan termasuk menghentikan peserta lomba
                 </li>
                 <li>
-                  Penilaian 100% berdasarkan{" "}
-                  <strong>KECEPATAN DAN JUMLAH GELANG</strong>.
+                  Jika ada pelari yang tampak dalam kesulitan atau mengalami
+                  cedera serius, silakan lakukan langkah berikut untuk
+                  mendapatkan bantuan
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Pergi ke pos pertolongan pertama.</li>
+                    <li>
+                      Meminta pelari lain untuk memberitahukan tim medis/panitia
+                      terdekat .
+                    </li>
+                    <li>
+                      Semua pelari harus membantu siapa saja yang dalam bahaya
+                      dan memberitahukan pos medik.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Biaya yang timbul untuk perawatan medis, baik darurat maupun
+                  evakuasi, adalah tanggung jawab pelari sendiri beserta biaya
+                  transportasi dari titik evakuasi.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          {/* Section Checkpoints and Water Stations*/}
+          <section
+            id="section-safety-medical"
+            className="text-[#F3E7D7] w-full px-5 md:px-10 pb-14"
+          >
+            <div className="flex items-center justify-center gap-3 pb-7">
+              <h3 className="text-2xl md:text-4xl">Safety and Medical Aid</h3>
+              <div className="w-full h-2 bg-gradient-to-r from-[#F3E7D7] to-transparent "></div>
+            </div>
+            <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
+              <ol className="list-decimal space-y-0 pl-7 pr-1">
+                <li>
+                  Checkpoints:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Terdapat 2 pos checkpoint di KM 6,7 dan KM 15</li>
+                    <li>
+                      Setiap peserta akan menerima gelang di setiap pos
+                      checkpoint.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Water and Food Stations:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>
+                      Berada di KM 2,0 | 5,7 | 8,3 | 10,6 | 13,2 | 16,9 | dan
+                      19,2 .
+                    </li>
+                    <li>
+                      Sampah harus dibuang di tempat yang disediakan (trash bag
+                      di setiap station).
+                    </li>
+                  </ul>
                 </li>
               </ol>
             </div>
