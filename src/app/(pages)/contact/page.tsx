@@ -59,7 +59,7 @@ const Contact = () => {
             Untuk informasi lebih lanjut mengenai kesempatan bekerja sama
             seputar sponsorship, media partner, dan community partner dalam
             Lomba Lintas Lembah dan Bukit, silakan hubungi kami di
-            l3b2024@gmail.com.
+            <span>l3b2024@gmail.com</span>.
           </p>
         </CardContent>
         <CardFooter>

@@ -143,11 +143,6 @@ export function CampaignCharity() {
               Kretabumi&quot; yang menjaga keseimbangan alam dan hubungan
               harmonis antara manusia dan lingkungan. Mari kita jaga bumi
               bersama, satu bibit harapan pada satu waktu.
-              <br />
-              <br />
-              Informasi Sumbangan:
-              <br />
-              6395549883 BCA a.n Pradita Asheila Putri
             </p>
           </CardDescription>
         </Card>
@@ -169,6 +164,17 @@ export function CampaignCharity() {
               berkontribusi pada kesejahteraan mereka, lingkungan, serta
               masyarakat. Kami ingin memastikan petani, sebagai tulang punggung
               ketahanan pangan, dapat terus berkembang dan sejahtera.
+            </p>
+          </CardDescription>
+        </Card>
+        <Card className="border-none bg-transparent w-[380px] md:w-[824px] flex flex-col items-end">
+          <CardDescription className="bg-[#FCC612] w-[380px] md:w-[824px] h-auto rounded-lg p-4 shadow-[0_4px_4px_0_#00000040]">
+            <p className=" text-[#0A4833] text-xl md:text-3xl text-center md:text-right">
+              Informasi Sumbangan:{" "}
+              <span className="md:hidden">
+                <br />
+              </span>
+              6395549883 BCA a.n Pradita Asheila Putri
             </p>
           </CardDescription>
         </Card>
