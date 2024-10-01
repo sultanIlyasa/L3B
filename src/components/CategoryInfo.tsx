@@ -24,12 +24,12 @@ export function CategoryInfo() {
           objectFit="cover"
           draggable="false"
         />
-        <h1 className="absolute w-full bottom-5 left-1/2 transform -translate-x-1/2 text-[#FFFFFF] text-6xl md:text-8xl font-bold">
+        <h1 className="absolute w-full bottom-5 left-1/2 transform -translate-x-1/2 text-[#FFFFFF] text-5xl md:text-8xl font-bold">
           INFORMASI ACARA
         </h1>
       </div>
 
-      <div className="relative bg-[#F3E7D7] min-h-screen flex flex-col md:flex-row p-auto items-center justify-center text-center py-52 gap-40 ">
+      <div className="relative bg-[#F3E7D7] min-h-screen flex flex-col md:flex-row p-auto items-center justify-center text-center py-52 gap-60 md:gap-40 ">
         <div className="absolute inset-0 z-0">
           <Image
             src="/mountbg.png"
@@ -41,7 +41,7 @@ export function CategoryInfo() {
           />
         </div>
 
-        <Card className="relative z-10 bg-[#0A483380] w-[563px] h-[370px] rounded-[20px] border-none shadow-[0_0_15px_1px_#000000] items-center justify-center flex">
+        <Card className="relative z-10 bg-[#0A483380] w-[340px] md:w-[563px] h-[470px] md:h-[370px] rounded-[20px] border-none shadow-[0_0_15px_1px_#000000] items-center justify-center flex">
           <div className="absolute -top-40 left-1/2 transform -translate-x-1/2">
             <Image
               src="/mount1.png"
@@ -63,7 +63,7 @@ export function CategoryInfo() {
             <CardHeader className="flex flex-col items-center p-0">
               <div className="w-32 h-2 bg-[#0A4833] rounded-full"></div>
             </CardHeader>
-            <CardFooter className="flex flex-col justify-center gap-3 mb-6">
+            <CardFooter className="flex flex-col w-[340px] md:w-[563px] justify-center gap-3 mb-6">
               <div className="flex gap-5">
                 <div className="bg-[#0A4833] w-[116px] h-[110px] rounded-xl border-none text-center flex flex-col items-center justify-center gap-4">
                   <div className="bg-[#F3E7D7] w-[70px] rounded-md text-xl">
@@ -89,7 +89,7 @@ export function CategoryInfo() {
                 </div>
               </div>
 
-              <div className="flex gap-5">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
                 <div className="bg-[#0A4833] w-[116px] h-[82px] rounded-xl border-none text-center flex flex-col items-center justify-center gap-1">
                   <div className="bg-[#F3E7D7] w-[96px] p-0.5 rounded-md text-lg">
                     <p className="text-[#0A4833]">Start Location</p>
@@ -131,7 +131,7 @@ export function CategoryInfo() {
           </CardContent>
         </Card>
 
-        <Card className="relative z-10 bg-[#0A483380] w-[563px] h-[370px] rounded-[20px] border-none shadow-[0_0_15px_1px_#000000] items-center justify-center flex">
+        <Card className="relative z-10 bg-[#0A483380] w-[340px] md:w-[563px] h-[470px] md:h-[370px] rounded-[20px] border-none shadow-[0_0_15px_1px_#000000] items-center justify-center flex">
           <div className="absolute -top-[184px] left-1/2 transform -translate-x-1/2">
             <Image
               src="/mount2.png"
@@ -153,7 +153,7 @@ export function CategoryInfo() {
             <CardHeader className="flex flex-col items-center p-0">
               <div className="w-32 h-2 bg-[#0A4833] rounded-full"></div>
             </CardHeader>
-            <CardFooter className="flex flex-col justify-center gap-3 mb-6">
+            <CardFooter className="flex flex-col w-[340px] md:w-[563px] justify-center gap-3 mb-6">
               <div className="flex gap-5">
                 <div className="bg-[#0A4833] w-[161px] h-[110px] rounded-xl border-none text-center flex flex-col items-center justify-center gap-4">
                   <div className="bg-[#F3E7D7] w-[120px] rounded-md text-xl">
@@ -168,7 +168,7 @@ export function CategoryInfo() {
                 </div>
               </div>
 
-              <div className="flex gap-5">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
                 <div className="bg-[#0A4833] w-[116px] h-[82px] rounded-xl border-none text-center flex flex-col items-center justify-center gap-1">
                   <div className="bg-[#F3E7D7] w-[96px] p-0.5 rounded-md text-lg">
                     <p className="text-[#0A4833]">Start Location</p>

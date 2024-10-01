@@ -11,7 +11,7 @@ export function CampaignCharity() {
       className={`${barlowCondensed.className} h-auto bg-[#0A4833] py-20 md:py-36 flex flex-col md:flex-row gap-5 mx-auto items-center justify-center`}
     >
       <div className="flex flex-col mx-auto justify-center items-center">
-        <Card className="bg-[#F3E7D7] w-[380px] md:w-[455px] h-auto rounded-3xl flex flex-col p-8 gap-3 md:gap-8">
+        <Card className="bg-[#F3E7D7] w-[360px] md:w-[455px] h-auto rounded-3xl flex flex-col p-8 gap-3 md:gap-8">
           <div className="w-full flex flex-col items-center">
             <div className="w-full">
               <div className="bg-[#FCC612] w-[100px] md:w-[137px] h-[39px] rounded-t-lg"></div>

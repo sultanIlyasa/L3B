@@ -5,6 +5,50 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+interface ExpandableLinkProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+const ExpandableLink = ({ href, children }: ExpandableLinkProps) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+
+    if (isExpanded) {
+      // If already expanded, scroll to the section
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If not expanded, toggle expansion
+      setIsExpanded(!isExpanded);
+    }
+  };
+
+  useEffect(() => {
+    // Scroll to section after expansion
+    if (isExpanded) {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [isExpanded, href]);
+
+  return (
+    <Link
+      href={href}
+      onClick={handleClick}
+      className={`hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7] ${isExpanded ? 'font-extrabold' : ''}`}
+    >
+      {children}
+    </Link>
+  );
+};
+
 export function RaceRulesRegulationComponent() {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -31,13 +75,20 @@ export function RaceRulesRegulationComponent() {
         Race Rules & Regulation
       </h1>
       <div className="bg-[#0D6A48] h-auto rounded-t-[100px] text-[#F3E7D7]">
-        <div className="mx-auto flex flex-col items-center justify-center gap-5 md:gap-8 py-14 font-bold">
+        <div className="mx-auto w-[340px] md:w-full flex flex-col items-center justify-center gap-5 md:gap-8 pt-14 font-bold">
           <h2 className={`${barlowCondensed.className} text-3xl md:text-5xl`}>
             Trail Run
           </h2>
           <div
-            className={`${plusJakartaSans.className} grid grid-cols-2 md:grid-cols-3 grid-rows-2 justify-center items-center text-center gap-2 md:gap-6 text-base md:text-xl`}
+            className={`${plusJakartaSans.className} grid grid-cols-2 md:grid-cols-3 grid-rows-2 justify-center items-center text-center gap-2 md:gap-6 text-sm md:text-xl`}
           >
+            <ExpandableLink href="#section-general1">General</ExpandableLink>
+            <ExpandableLink href="#section-requirements1">Requirements</ExpandableLink>
+            <ExpandableLink href="#section-race-rules">Race Rules</ExpandableLink>
+            <ExpandableLink href="#section-mandatory-gear1">Mandatory Gear</ExpandableLink>
+            <ExpandableLink href="#section-safety-medical1">Safety and Medical Aid</ExpandableLink>
+            <ExpandableLink href="#section-cpws">Checkpoints and Water Stations</ExpandableLink>
+
             <Link
               href="#section-general1"
               onClick={toggleExpand}
@@ -82,36 +133,36 @@ export function RaceRulesRegulationComponent() {
             </Link>
           </div>
         </div>
-        <div className="mx-auto flex flex-col items-center justify-center gap-5 md:gap-8 py-14 font-bold">
+        <div className="mx-auto w-[340px] md:w-full flex flex-col items-center justify-center gap-5 md:gap-8 py-14 font-bold">
           <h2 className={`${barlowCondensed.className} text-3xl md:text-5xl`}>
             Fun Run
           </h2>
           <div
-            className={`${plusJakartaSans.className} grid grid-cols-2 md:grid-cols-4 grid-rows-2 justify-center items-center text-center gap-2 md:gap-6 text-base md:text-xl`}
+            className={`${plusJakartaSans.className}  grid grid-cols-2 md:grid-cols-4 grid-rows-2 justify-center items-center text-center gap-2 md:gap-6 text-sm md:text-xl`}
           >
             <Link
-              href="#section-snk"
+              href="#section-general2"
               onClick={toggleExpand}
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
               General
             </Link>
             <Link
-              href="#section-perlengkapan"
+              href="#section-requirements2"
               onClick={toggleExpand}
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
               Requirements
             </Link>
             <Link
-              href="#section-teknislomba"
+              href="#section-mandatory-gear2"
               onClick={toggleExpand}
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
               Mandatory Gear
             </Link>
             <Link
-              href="#section-sistemcot"
+              href="#section-pgws"
               onClick={toggleExpand}
               className="hover:font-extrabold row-span-2 leading-8 border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
@@ -120,21 +171,21 @@ export function RaceRulesRegulationComponent() {
               
             </Link>
             <Link
-              href="#section-jalur"
+              href="#section-competition-techniques"
               onClick={toggleExpand}
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
               Competition Techniques
             </Link>
             <Link
-              href="#section-bentukmarka"
+              href="#section-assesment"
               onClick={toggleExpand}
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
               Assessment
             </Link>
             <Link
-              href="#section-penilaian"
+              href="#section-safety-medical2"
               onClick={toggleExpand}
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
