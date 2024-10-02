@@ -10,45 +10,6 @@ interface ExpandableLinkProps {
   children: React.ReactNode;
 }
 
-const ExpandableLink = ({ href, children }: ExpandableLinkProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-
-    if (isExpanded) {
-      // If already expanded, scroll to the section
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      // If not expanded, toggle expansion
-      setIsExpanded(!isExpanded);
-    }
-  };
-
-  useEffect(() => {
-    // Scroll to section after expansion
-    if (isExpanded) {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [isExpanded, href]);
-
-  return (
-    <Link
-      href={href}
-      onClick={handleClick}
-      className={`hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7] ${isExpanded ? 'font-extrabold' : ''}`}
-    >
-      {children}
-    </Link>
-  );
-};
-
 export function RaceRulesRegulationComponent() {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -65,6 +26,61 @@ export function RaceRulesRegulationComponent() {
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
+  };
+  const ExpandableLink = ({ href, children }: ExpandableLinkProps) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const handleClick = (
+      e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    ) => {
+      e.preventDefault();
+      if (isExpanded) {
+        // If already expanded, scroll to the section
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // If not expanded, toggle expansion
+        setIsExpanded(!isExpanded);
+      }
+    };
+
+    useEffect(() => {
+      // Scroll to section after expansion
+      if (isExpanded) {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, [isExpanded, href]);
+
+    if (isExpanded) {
+      return (
+        <Link
+          href={href}
+          onClick={toggleExpand}
+          className={`hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7] ${
+            isExpanded ? "font-extrabold" : ""
+          }`}
+        >
+          {children}
+        </Link>
+      );
+    } else {
+      return (
+        <Link
+          href={href}
+          onClick={handleClick}
+          className={`hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7] ${
+            isExpanded ? "font-extrabold" : ""
+          }`}
+        >
+          {children}
+        </Link>
+      );
+    }
   };
 
   return (
@@ -83,13 +99,23 @@ export function RaceRulesRegulationComponent() {
             className={`${plusJakartaSans.className} grid grid-cols-2 md:grid-cols-3 grid-rows-2 justify-center items-center text-center gap-2 md:gap-6 text-sm md:text-xl`}
           >
             <ExpandableLink href="#section-general1">General</ExpandableLink>
-            <ExpandableLink href="#section-requirements1">Requirements</ExpandableLink>
-            <ExpandableLink href="#section-race-rules">Race Rules</ExpandableLink>
-            <ExpandableLink href="#section-mandatory-gear1">Mandatory Gear</ExpandableLink>
-            <ExpandableLink href="#section-safety-medical1">Safety and Medical Aid</ExpandableLink>
-            <ExpandableLink href="#section-cpws">Checkpoints and Water Stations</ExpandableLink>
+            <ExpandableLink href="#section-requirements1">
+              Requirements
+            </ExpandableLink>
+            <ExpandableLink href="#section-race-rules">
+              Race Rules
+            </ExpandableLink>
+            <ExpandableLink href="#section-mandatory-gear1">
+              Mandatory Gear
+            </ExpandableLink>
+            <ExpandableLink href="#section-safety-medical1">
+              Safety and Medical Aid
+            </ExpandableLink>
+            <ExpandableLink href="#section-cpws">
+              Checkpoints and Water Stations
+            </ExpandableLink>
 
-            <Link
+            {/* <Link
               href="#section-general1"
               onClick={toggleExpand}
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
@@ -130,7 +156,7 @@ export function RaceRulesRegulationComponent() {
               className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
             >
               Checkpoints and Water Stations
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="mx-auto w-[340px] md:w-full flex flex-col items-center justify-center gap-5 md:gap-8 py-14 font-bold">
@@ -140,57 +166,25 @@ export function RaceRulesRegulationComponent() {
           <div
             className={`${plusJakartaSans.className}  grid grid-cols-2 md:grid-cols-4 grid-rows-2 justify-center items-center text-center gap-2 md:gap-6 text-sm md:text-xl`}
           >
-            <Link
-              href="#section-general2"
-              onClick={toggleExpand}
-              className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
-            >
-              General
-            </Link>
-            <Link
-              href="#section-requirements2"
-              onClick={toggleExpand}
-              className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
-            >
+            <ExpandableLink href="#section-general2">General</ExpandableLink>
+            <ExpandableLink href="#section-requirements2">
               Requirements
-            </Link>
-            <Link
-              href="#section-mandatory-gear2"
-              onClick={toggleExpand}
-              className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
-            >
+            </ExpandableLink>
+            <ExpandableLink href="#section-mandatory-gear2">
               Mandatory Gear
-            </Link>
-            <Link
-              href="#section-pgws"
-              onClick={toggleExpand}
-              className="hover:font-extrabold row-span-2 leading-8 border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
-            >
-              Post Games and
-              <br/>Water Stations
-              
-            </Link>
-            <Link
-              href="#section-competition-techniques"
-              onClick={toggleExpand}
-              className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
-            >
+            </ExpandableLink>
+            <ExpandableLink href="#section-pgws">
+              Post Games and Water Stations
+            </ExpandableLink>
+            <ExpandableLink href="#section-competition-techniques">
               Competition Techniques
-            </Link>
-            <Link
-              href="#section-assesment"
-              onClick={toggleExpand}
-              className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
-            >
+            </ExpandableLink>
+            <ExpandableLink href="#section-assesment">
               Assessment
-            </Link>
-            <Link
-              href="#section-safety-medical2"
-              onClick={toggleExpand}
-              className="hover:font-extrabold border-[1px] py-2 px-4 rounded-[40px] border-[#F3E7D7]"
-            >
+            </ExpandableLink>
+            <ExpandableLink href="#section-safety-medical2" >
               Safety and Medical Aid
-            </Link>
+            </ExpandableLink>
           </div>
         </div>
       </div>
