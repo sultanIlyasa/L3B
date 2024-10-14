@@ -182,7 +182,7 @@ export function RaceRulesRegulationComponent() {
             <ExpandableLink href="#section-assesment">
               Assessment
             </ExpandableLink>
-            <ExpandableLink href="#section-safety-medical2" >
+            <ExpandableLink href="#section-safety-medical2">
               Safety and Medical Aid
             </ExpandableLink>
           </div>
@@ -238,8 +238,8 @@ export function RaceRulesRegulationComponent() {
               <br />
               Sub-Kategori:
               <ul className="list-disc pl-6">
-                <li>Umum Pria: 17–50 Tahun</li>
-                <li>Umum wanita: 17–50 Tahun</li>
+                <li>Umum Pria: 17–70 Tahun</li>
+                <li>Umum wanita: 17–70 Tahun</li>
               </ul>
             </li>
             <li>
@@ -268,6 +268,19 @@ export function RaceRulesRegulationComponent() {
               kami.
             </li>
           </ol>
+          <div className="bg-[#F3E7D7] text-[#0A4732] font-semibold px-6 md:px-9 py-3 md:py-5 mt-5 rounded-[20px]">
+            <h5 className="text-xl font-extrabold md:text-[30px]">
+              Catatan Penting
+            </h5>
+            <ul className="list-disc pl-5 mt-2 text-base md:text-[22px] leading-10">
+              <li>
+                untuk usia 51-70 selain surat keterangan sehat, wajib memberikan
+                bukti poin ITRA/bukti ikut race 1-2 tahun kebelakang. Bukti
+                tersebut dikirimkan melalui form yang dicantumkan di deskripsi
+                pembelian tiket loket.com
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -655,8 +668,9 @@ export function RaceRulesRegulationComponent() {
               <ol className="list-decimal space-y-0 pl-7 pr-1">
                 <li>
                   Kategori Fun Run (8,3 km) terdiri dari 1 kelompok berisi 4
-                  orang. Terbuka untuk peserta umum (pria & wanita) berusia
-                  15-60 tahun dan sebaiknya pernah mengikuti lomba lari.
+                  orang. Terbuka untuk peserta umum (pria & wanita) dengan{" "}
+                  <span className="underline">usia tidak dibatasi</span> dan sebaiknya pernah
+                  mengikuti lomba lari.
                 </li>
                 <li>
                   Mengikuti instruksi panitia untuk menjaga keamanan selama di
@@ -702,7 +716,7 @@ export function RaceRulesRegulationComponent() {
             </div>
             <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
               <ol className="list-decimal space-y-0 pl-7 pr-1">
-                <li>Umur 15-60 tahun, dalam kondisi sehat jasmani.</li>
+                <li>Umur: tidak dibatasi, , dalam kondisi sehat jasmani.</li>
                 <li>
                   Membawa peralatan pribadi:
                   <ul className="list-disc pl-6">
