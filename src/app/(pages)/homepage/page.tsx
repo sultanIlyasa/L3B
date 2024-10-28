@@ -299,7 +299,7 @@ const Homepage = () => {
                 height={60}
               ></Image>
               <Image
-                src={"/homepage/M_unknown.jpg"}
+                src={"/homepage/M_FPI.jpg"}
                 alt="logo"
                 className=""
                 width={100}
