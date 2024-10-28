@@ -73,7 +73,7 @@ export function CategoryInfo() {
                     className={`${plusJakartaSans.className} text-sm leading-4 text-[#F3E7D7] space-y-3`}
                   >
                     <p>21 Km</p>
-                    <p>17-50 Tahun</p>
+                    <p>17-70 Tahun</p>
                   </div>
                 </div>
                 <div className="bg-[#0A4833] w-[116px] h-[110px] rounded-xl border-none text-center flex flex-col items-center justify-center gap-4">
@@ -84,7 +84,7 @@ export function CategoryInfo() {
                     className={`${plusJakartaSans.className} text-sm leading-4 text-[#F3E7D7] space-y-3`}
                   >
                     <p>21 Km</p>
-                    <p>17-50 Tahun</p>
+                    <p>17-70 Tahun</p>
                   </div>
                 </div>
               </div>
