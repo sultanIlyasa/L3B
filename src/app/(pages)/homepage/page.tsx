@@ -27,12 +27,14 @@ const Homepage = () => {
           {/* Left side content */}
           <div className="lg:w-1/2 lg:pr-20 mb-8 lg:mb-0 z-10">
             <h1 className=" text-white text-4xl md:text-5xl font-bold mb-4">
-              SATU LANGKAHKU, <br /> HIJAU BUMIKU
+              THE LEGENDARY RACE
             </h1>
             <p className="text-white text-lg mb-6 text-justify">
-              Lomba Lintas Lembah dan Bukit (L3B) hadir membawa misi untuk
-              menciptakan bumi yang lebih hijau dan mengabdi kepada petani.
-              Siap, steady, hijau! Dengan L3B 2024, mari hijaukan bumi bersama!
+              Lomba Lintas Lembah dan Bukit (L3B), salah satu lomba lari lintas
+              alam tertua di Indonesia yang diselenggarakan oleh Fakultas
+              Pertanian Unpad. Lomba ini telah mengukir banyak kenangan di hati
+              pelari sejak 1962. Kini, giliranmu untuk menjadi bagian dari
+              legenda L3B.
             </p>
             <button
               className="bg-yellow-400 text-emerald-800 font-semibold py-2 px-6 rounded-full hover:bg-yellow-300 transition duration-300"
@@ -153,9 +155,11 @@ const Homepage = () => {
               MANDALA KRETABUMI
             </h1>
             <p className="md:mx-[25%] text-white text-sm md:text-md text-center ">
-              Lomba Lintas Lembah dan Bukit (L3B) adalah ajang lomba lari lintas
-              alam dwi tahunan Fakultas Pertanian Unpad yang sudah berlangsung
-              sejak 1962, dan kembali digelar di tahun ini.
+              Tema L3B tahun ini adalah “Mandala Kretabumi” yang berarti subur
+              makmur. Tema ini berangkat dari harapan untuk mewujudkan bumi yang
+              subur dan para petani yang makmur. Di L3B 2024, kita semua dapat
+              berkontribusi dalam mewujudkan harapan ini.
+              #SatuLangkahkuHijauBumiku
             </p>
           </div>
         </div>
@@ -173,7 +177,7 @@ const Homepage = () => {
           </div>
           <div className="flex container">
             <article className="mx-auto items-center lg:my-auto text-center md:text-left text-[#F3E7D7]">
-              <h2>Campaign and Charity</h2>
+              <h2>PRE-EVENT: Campaign and Charity</h2>
               <h1
                 className={`mx-auto text-2xl md:text-4xl font-bold text-center md:text-left ${barlowCondensed.className}`}
               >
@@ -187,7 +191,7 @@ const Homepage = () => {
                 <br />
                 <p>
                   Mari, bersama-sama kita ciptakan kehidupan yang lebih hijau
-                  dan berkelanjutan dengan menanam 1.000 bibit tanaman.{" "}
+                  dan berkelanjutan dengan menanam 1.001 bibit tanaman.{" "}
                 </p>
                 <br />
                 <p>
@@ -214,7 +218,7 @@ const Homepage = () => {
           <div className="flex container">
             <article className="mx-auto items-center lg:my-auto md:text-left text-[#F3E7D7]">
               <h2 className="text-center md:text-left">
-                Trail Run and Fun Run
+                MAIN EVENT: Trail Run and Fun Run
               </h2>
               <h1
                 className={`mx-auto text-2xl md:text-4xl font-bold text-center md:text-left ${barlowCondensed.className}`}
@@ -251,7 +255,7 @@ const Homepage = () => {
           </div>
           <div className="flex container">
             <article className="mx-auto items-center lg:my-auto md:text-left text-[#F3E7D7]">
-              <h2 className="text-center md:text-left">Closing</h2>
+              <h2 className="text-center md:text-left">CLOSING </h2>
               <h1
                 className={`mx-auto text-2xl md:text-4xl font-bold text-center md:text-left ${barlowCondensed.className}`}
               >
@@ -279,18 +283,55 @@ const Homepage = () => {
         <div className="container mx-auto mt-12">
           <div className="mx-auto flex flex-col w-[100%] p-10 bg-[#F3E7D7] rounded-3xl">
             <h1 className="font-bold text-center">Supported By</h1>
-            <div className="flex flex-col md:flex-row mx-auto gap-4">
+            <div className="flex flex-col md:flex-row mx-auto gap-4 justify-center items-center">
               <Image
                 src={"/gojek.png"}
                 alt="logo"
-                className="md:w-[206px] md:h-[60px] w-[128px] h-[30px]"
+                className="md:w-[257px] md:h-[60px] w-[128px] h-[30px]"
                 width={256}
                 height={60}
               ></Image>
               <Image
                 src={"/gulf.png"}
                 alt="logo"
-                className="md:w-[156px] md:h-[60px] w-[128px] h-[50px]"
+                className="md:w-[162px] md:h-[60px] w-[128px] h-[50px]"
+                width={170}
+                height={60}
+              ></Image>
+              <Image
+                src={"/homepage/M_unknown.jpg"}
+                alt="logo"
+                className=""
+                width={100}
+                height={60}
+              ></Image>
+            </div>
+            <div className="grid grid-cols-2 md:flex md:flex-row mx-auto gap-4 mt-2 justify-center items-center">
+              <Image
+                src={"/homepage/S_Greeners.jpg"}
+                alt="logo"
+                className="md:h-[80px]"
+                width={80}
+                height={60}
+              ></Image>
+              <Image
+                src={"/homepage/S_Kojo_Garmen.jpg"}
+                alt="logo"
+                className="md:h-[80px]"
+                width={80}
+                height={60}
+              ></Image>
+              <Image
+                src={"/homepage/S_Logo_Fotoyu.png"}
+                alt="logo"
+                className="md:h-[75px]"
+                width={160}
+                height={60}
+              ></Image>
+              <Image
+                src={"/homepage/S_LOGO_SOFTRIDE.png"}
+                alt="logo"
+                className="md:h-[120px]"
                 width={170}
                 height={60}
               ></Image>
@@ -305,12 +346,11 @@ const Homepage = () => {
           <h1
             className={`text-[#F3E7D7] mx-auto text-3xl md:text-4xl lg:text-6xl font-bold text-center ${barlowCondensed.className}`}
           >
-            SIAP UNTUK JELAJAHI INDAHNYA <br /> GUNUNG MANGLAYANG?
+            SIAP UNTUK MENJADI BAGIAN DARI LEGENDA L3B?
           </h1>
           <p className="text-[#F3E7D7] text-center justify-center lg:text-xl mt-6">
-            Nikmati pengalaman lari melintasi lembah dan bukit, dan jadilah
-            bagian dari aksi <br />
-            penghijauan bumi bersama L3B.
+            Ayo, ambil kesempatanmu untuk menjadi bagian dari lomba lari paling
+            legendaris!
           </p>
           <div className="flex flex-col items-center mt-10">
             {" "}

@@ -316,7 +316,7 @@ export function RaceRulesRegulationComponent() {
             </div>
             <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
               <ol className="list-decimal space-y-0 pl-7 pr-1">
-                <li>Umur 17-50 tahun, dalam kondisi sehat jasmani.</li>
+                <li>Umur 17-70 tahun, dalam kondisi sehat jasmani.</li>
                 <li>
                   Membawa peralatan pribadi:
                   <ul className="list-disc pl-6">
