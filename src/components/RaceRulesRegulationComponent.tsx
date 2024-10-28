@@ -233,7 +233,7 @@ export function RaceRulesRegulationComponent() {
           <ol className="list-decimal space-y-0 pl-7 pr-1">
             <li>
               Kategori <em>Trail Run</em> (21,4km) terbuka untuk peserta umum
-              (pria & wanita) berusia 17-50 tahun dan sebaiknya pernah mengikuti
+              (pria & wanita) berusia 17-70 tahun dan sebaiknya pernah mengikuti
               lomba lari.
               <br />
               Sub-Kategori:
@@ -241,7 +241,21 @@ export function RaceRulesRegulationComponent() {
                 <li>Umum Pria: 17–70 Tahun</li>
                 <li>Umum wanita: 17–70 Tahun</li>
               </ul>
+              <div className="bg-[#F3E7D7] text-[#0A4732] font-semibold px-6 md:px-9 py-3 md:py-5 mt-5 rounded-[20px]">
+                <h5 className="text-xl font-extrabold md:text-[30px]">
+                  Catatan Penting
+                </h5>
+                <ul className="list-disc pl-5 mt-2 text-base md:text-[22px] leading-10">
+                  <li>
+                    untuk usia 51-70 selain surat keterangan sehat, wajib
+                    memberikan bukti poin ITRA/bukti ikut race 1-2 tahun
+                    kebelakang. Bukti tersebut dikirimkan melalui form yang
+                    dicantumkan di deskripsi pembelian tiket loket.com
+                  </li>
+                </ul>
+              </div>
             </li>
+
             <li>
               Mengikuti instruksi panitia untuk menjaga keamanan selama di jalur
               lari yang ditentukan.
@@ -268,19 +282,6 @@ export function RaceRulesRegulationComponent() {
               kami.
             </li>
           </ol>
-          <div className="bg-[#F3E7D7] text-[#0A4732] font-semibold px-6 md:px-9 py-3 md:py-5 mt-5 rounded-[20px]">
-            <h5 className="text-xl font-extrabold md:text-[30px]">
-              Catatan Penting
-            </h5>
-            <ul className="list-disc pl-5 mt-2 text-base md:text-[22px] leading-10">
-              <li>
-                untuk usia 51-70 selain surat keterangan sehat, wajib memberikan
-                bukti poin ITRA/bukti ikut race 1-2 tahun kebelakang. Bukti
-                tersebut dikirimkan melalui form yang dicantumkan di deskripsi
-                pembelian tiket loket.com
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -668,8 +669,8 @@ export function RaceRulesRegulationComponent() {
               <ol className="list-decimal space-y-0 pl-7 pr-1">
                 <li>
                   Kategori Fun Run (8,3 km) terdiri dari 1 kelompok berisi 4
-                  orang. Terbuka untuk peserta umum (pria & wanita) dengan{" "}
-                  <span className="underline">usia tidak dibatasi</span> dan sebaiknya pernah
+                  orang. Terbuka untuk peserta umum (pria & wanita){" "}
+                  <span className="underline">dengan usia tidak dibatasi </span> dan sebaiknya pernah
                   mengikuti lomba lari.
                 </li>
                 <li>
@@ -716,7 +717,7 @@ export function RaceRulesRegulationComponent() {
             </div>
             <div className="py-8 px-5 md:px-14 text-justify rounded-xl bg-[#0D6A48] text-[#E3F6EB] max-w-full mx-auto text-lg md:text-[22px] leading-10">
               <ol className="list-decimal space-y-0 pl-7 pr-1">
-                <li>Umur: tidak dibatasi, , dalam kondisi sehat jasmani.</li>
+                <li>Umur: tidak dibatasi, dalam kondisi sehat jasmani.</li>
                 <li>
                   Membawa peralatan pribadi:
                   <ul className="list-disc pl-6">
