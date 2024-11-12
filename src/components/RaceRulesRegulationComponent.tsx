@@ -265,6 +265,29 @@ export function RaceRulesRegulationComponent() {
               <em>medical check-up</em> sebelum mengikuti lomba.
             </li>
             <li>
+              Setiap peserta menyetujui surat keterangan sehat{" "}
+              <a
+                href="https://docs.google.com/document/d/1cGUfCycKXPJYUVigLdD5jxLD9ART6H6yFzItLnb_Pk0/edit?usp=sharing"
+                className="underline hover:text-blue-600"
+              >
+                (link template disini)
+              </a>{" "}
+              dan wajib membawa surat-surat sehat tersebut saat pengambilan
+              racepack.
+            </li>
+            <li>
+              Jika peserta berhalangan mengambil race pack, dapat diwakilkan
+              oleh orang lain dengan menggunakan surat kuasa{" "}
+              <a
+                href="https://docs.google.com/document/d/1Gu1RddIkyv0aKNycjxJmzIKZ5kEG24nf-x23wZVvEMU/edit?tab=t.0"
+                className="underline hover:text-blue-600"
+              >
+                (link template surat kuasa disini).
+              </a>{" "}
+              Namun, tetap harus melengkapi dokumen-dokumen yang diperlukan pada
+              saat pengambilan race pack.
+            </li>
+            <li>
               Setiap peserta mengetahui cara mengatasi masalah fisik atau mental
               akibat kelelahan, masalah pencernaan, nyeri otot atau sendi, dan
               penyakit ringan saat sendiri. Keselamatan pribadi berada di tangan
@@ -670,8 +693,8 @@ export function RaceRulesRegulationComponent() {
                 <li>
                   Kategori Fun Run (8,3 km) terdiri dari 1 kelompok berisi 4
                   orang. Terbuka untuk peserta umum (pria & wanita){" "}
-                  <span className="underline">dengan usia tidak dibatasi </span> dan sebaiknya pernah
-                  mengikuti lomba lari.
+                  <span className="underline">dengan usia tidak dibatasi </span>{" "}
+                  dan sebaiknya pernah mengikuti lomba lari.
                 </li>
                 <li>
                   Mengikuti instruksi panitia untuk menjaga keamanan selama di
@@ -686,6 +709,18 @@ export function RaceRulesRegulationComponent() {
                     (link template disini)
                   </a>{" "}
                   dan wajib membawa surat tersebut saat pengambilan racepack.
+                </li>
+                <li>
+                  Jika peserta berhalangan mengambil race pack, dapat diwakilkan
+                  oleh orang lain dengan menggunakan surat kuasa{" "}
+                  <a
+                    href="https://docs.google.com/document/d/1Gu1RddIkyv0aKNycjxJmzIKZ5kEG24nf-x23wZVvEMU/edit?tab=t.0"
+                    className="underline hover:text-blue-600"
+                  >
+                    (link template surat kuasa disini).{" "}
+                  </a>
+                  Namun, tetap harus melengkapi dokumen-dokumen yang diperlukan
+                  pada saat pengambilan race pack.
                 </li>
                 <li>
                   Setiap peserta mengetahui cara mengatasi masalah fisik atau
