@@ -279,7 +279,7 @@ export function RaceRulesRegulationComponent() {
               Jika peserta berhalangan mengambil race pack, dapat diwakilkan
               oleh orang lain dengan menggunakan surat kuasa{" "}
               <a
-                href="https://docs.google.com/document/d/1Gu1RddIkyv0aKNycjxJmzIKZ5kEG24nf-x23wZVvEMU/edit?tab=t.0"
+                href="https://docs.google.com/document/d/1AOT47aUDkzq5VPFxWTtAEUZT2myfjxDnhMcxH8ypfDc/edit?usp=sharing"
                 className="underline hover:text-blue-600"
               >
                 (link template surat kuasa disini).
@@ -714,7 +714,7 @@ export function RaceRulesRegulationComponent() {
                   Jika peserta berhalangan mengambil race pack, dapat diwakilkan
                   oleh orang lain dengan menggunakan surat kuasa{" "}
                   <a
-                    href="https://docs.google.com/document/d/1Gu1RddIkyv0aKNycjxJmzIKZ5kEG24nf-x23wZVvEMU/edit?tab=t.0"
+                    href="https://docs.google.com/document/d/1AOT47aUDkzq5VPFxWTtAEUZT2myfjxDnhMcxH8ypfDc/edit?usp=sharing"
                     className="underline hover:text-blue-600"
                   >
                     (link template surat kuasa disini).{" "}
