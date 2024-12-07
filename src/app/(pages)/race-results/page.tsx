@@ -43,11 +43,20 @@ const RaceResults: React.FC = () => {
       const processedSheets: SheetData[] = workbook.SheetNames.map(
         (sheetName, sheetIndex) => {
           const worksheet = workbook.Sheets[sheetName];
-          const data = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+          const data: any[][] = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+          // Filter out completely empty rows
+          const filteredData = data
+            .slice(1)
+            .filter((row) =>
+              row.some(
+                (cell) => cell !== undefined && cell !== null && cell !== ""
+              )
+            );
 
           return {
             sheetName,
-            data: data.slice(1, 92).map((row: any, rowIndex) => ({
+            data: filteredData.map((row: any, rowIndex) => ({
               A: row[0],
               B: row[1],
               C: row[2],
@@ -102,6 +111,13 @@ const RaceResults: React.FC = () => {
           // Dynamically set columns for each sheet
           const tableColumns =
             index === 0 ? columnsSheetsOne : columnsSheetsTwo;
+
+          // Configure pagination only if there is data
+          const paginationConfig =
+            sheet.data.length > 0
+              ? { pageSize: 10 } // Adjust page size as needed
+              : false;
+
           return (
             <div key={index}>
               <div className="flex flex-row items-center gap-3 md:gap-7 justify-center px-5 md:px-10 relative -top-10 left-1/2 transform -translate-x-1/2">
@@ -118,9 +134,15 @@ const RaceResults: React.FC = () => {
                 className="custom-table px-10 mb-24"
                 dataSource={sheet.data}
                 columns={tableColumns}
-                rowKey={(key, idx) => `${index}-${idx}`}
+                rowKey={(record, idx) => `${index}-${idx}`}
                 bordered
-                pagination={{ pageSize: 10 }}
+                pagination={{
+                  pageSize: 10, // Keep 10 rows per page
+                  total: sheet.data.length, // Total number of actual rows
+                  showSizeChanger: false,
+                  showTotal: (total, range) =>
+                    `${range[0]}-${range[1]} of ${total} items`, // Optional: show range info
+                }}
                 size="middle"
               />
             </div>
