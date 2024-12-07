@@ -280,7 +280,8 @@ const Homepage = () => {
         </div>
 
         {/* Sponsorship */}
-        <div className="container mx-auto mt-12">
+
+        <div className="container mx-auto my-12">
           <div className="mx-auto flex flex-col w-[100%] p-10 bg-[#F3E7D7] rounded-3xl">
             <h1 className="font-bold text-center">Supported By</h1>
             <div className="flex flex-col md:flex-row mx-auto gap-4 justify-center items-center">
@@ -305,34 +306,122 @@ const Homepage = () => {
                 width={100}
                 height={60}
               ></Image>
-            </div>
-            <div className="grid grid-cols-2 md:flex md:flex-row mx-auto gap-4 mt-2 justify-center items-center">
               <Image
                 src={"/homepage/S_Greeners.jpg"}
                 alt="logo"
-                className="md:h-[80px]"
+                className="md:w-[100px] md:h-[100px]"
                 width={80}
-                height={60}
+                height={80}
               ></Image>
               <Image
                 src={"/homepage/S_Kojo_Garmen.jpg"}
                 alt="logo"
-                className="md:h-[80px]"
+                className="md:w-[100px] md:h-[100px]"
                 width={80}
-                height={60}
+                height={80}
               ></Image>
               <Image
                 src={"/homepage/S_Logo_Fotoyu.png"}
                 alt="logo"
-                className="md:h-[75px]"
+                className="md:w-[200px] md:h-[50px]"
                 width={160}
-                height={60}
+                height={40}
               ></Image>
               <Image
                 src={"/homepage/S_LOGO_SOFTRIDE.png"}
                 alt="logo"
-                className="md:h-[120px]"
+                className="md:w-[180px] md:h-[120px]"
+                width={100}
+                height={30}
+              ></Image>
+            </div>
+
+            <div className="grid grid-cols-2 md:flex md:flex-row mx-auto gap-4 mt-2 justify-center items-center">
+              <Image
+                src={"/sponsor tambahan/Corteva.png"}
+                alt="logo"
+                className="md:w-[257px] md:h-[60px] w-[128px] h-[30px]"
+                width={256}
+                height={60}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/Rentokil.png"}
+                alt="logo"
+                className="md:w-[162px] md:h-[60px] w-[128px] h-[50px]"
                 width={170}
+                height={60}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/Bumi Agro.jpg"}
+                alt="logo"
+                className="md:w-[162px] md:h-[80px] w-[128px] h-[60px]"
+                width={120}
+                height={60}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/BRI.jpg"}
+                alt="logo"
+                className="md:w-[180px] md:h-[65px] w-[150px] h-[55px]"
+                width={80}
+                height={60}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/EJ.png"}
+                alt="logo"
+                className="md:w-[100px] md:h-[100px]"
+                width={80}
+                height={80}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/Ichitan.png"}
+                alt="logo"
+                className="md:w-[100px] md:h-[100px]"
+                width={80}
+                height={80}
+              ></Image>
+            </div>
+
+            <div className="grid grid-cols-2 md:flex md:flex-row mx-auto gap-4 mt-2 justify-center items-center">
+              <Image
+                src={"/sponsor tambahan/Kahf.jpg"}
+                alt="logo"
+                className="md:w-[180px] md:h-[90px]"
+                width={120}
+                height={60}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/Lokalate.png"}
+                alt="logo"
+                className="md:w-[200px] md:h-[100px] w-[128px] h-[30px]"
+                width={256}
+                height={60}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/Nutrihub.png"}
+                alt="logo"
+                className="md:w-[170px] md:h-[80px] "
+                width={120}
+                height={50}
+              ></Image>
+              {/* <Image
+                src={"/sponsor tambahan/Pamelaria Persada.jpg"}
+                alt="logo"
+                className=""
+                width={100}
+                height={60}
+              ></Image> */}
+              <Image
+                src={"/sponsor tambahan/Sari Kedelai.jpg"}
+                alt="logo"
+                className="md:w-[100px] md:h-[100px]"
+                width={80}
+                height={80}
+              ></Image>
+              <Image
+                src={"/sponsor tambahan/Wardah.png"}
+                alt="logo"
+                className="md:w-[225px] md:h-[60px]"
+                width={80}
                 height={60}
               ></Image>
             </div>

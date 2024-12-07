@@ -16,27 +16,17 @@ const RaceResults: React.FC = () => {
   const [sheetData, setSheetData] = useState<SheetData[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
-  const columns = [
-    {
-      title: "No/ BIB",
-      dataIndex: "A",
-      key: "#NoBIB",
-    },
-    {
-      title: "Nama Lengkap",
-      dataIndex: "B",
-      key: "#NamaLengkap",
-    },
-    {
-      title: "Jenis Kelamin",
-      dataIndex: "C",
-      key: "#Sex",
-    },
-    {
-      title: "Finish Time",
-      dataIndex: "D",
-      key: "Finish Time",
-    },
+  const columnsSheetsOne = [
+    { title: "No/ BIB", dataIndex: "A", key: "#NoBIB" },
+    { title: "Nama Lengkap", dataIndex: "B", key: "#NamaLengkap" },
+    { title: "Jenis Kelamin", dataIndex: "C", key: "#Sex" },
+    { title: "Finish Time", dataIndex: "D", key: "Finish Time" },
+  ];
+
+  const columnsSheetsTwo = [
+    { title: "No/ BIB", dataIndex: "A", key: "#NoBIB" },
+    { title: "Nama Lengkap", dataIndex: "B", key: "#NamaLengkap" },
+    { title: "Finish Time", dataIndex: "C", key: "Finish Time" },
   ];
   const fetchExcelFile = async (url: string) => {
     try {
@@ -108,31 +98,34 @@ const RaceResults: React.FC = () => {
       </div>
 
       <Col lg={24}>
-        {sheetData.slice(0, 2).map((sheet, index) => (
-          <div key={index}>
-            {/* Header dengan Gradien dan Nama Sheet */}
-            <div className="flex flex-row items-center gap-3 md:gap-7 justify-center px-5 md:px-10 relative -top-10 left-1/2 transform -translate-x-1/2">
-              <div className="w-full h-3 bg-gradient-to-r from-transparent to-[#F3E7D7]"></div>
-              <div className="w-fit bg-[#F3E7D7] rounded-[20px] flex shrink-0 items-center justify-center py-5 px-7">
-                <span className="text-[#0A4833] text-3xl md:text-6xl font-medium italic">
-                  {sheet.sheetName}
-                </span>
+        {sheetData.slice(0, 2).map((sheet, index) => {
+          // Dynamically set columns for each sheet
+          const tableColumns =
+            index === 0 ? columnsSheetsOne : columnsSheetsTwo;
+          return (
+            <div key={index}>
+              <div className="flex flex-row items-center gap-3 md:gap-7 justify-center px-5 md:px-10 relative -top-10 left-1/2 transform -translate-x-1/2">
+                <div className="w-full h-3 bg-gradient-to-r from-transparent to-[#F3E7D7]"></div>
+                <div className="w-fit bg-[#F3E7D7] rounded-[20px] flex shrink-0 items-center justify-center py-5 px-7">
+                  <span className="text-[#0A4833] text-3xl md:text-6xl font-medium italic">
+                    {sheet.sheetName}
+                  </span>
+                </div>
+                <div className="w-full h-3 bg-gradient-to-r from-[#F3E7D7] to-transparent"></div>
               </div>
-              <div className="w-full h-3 bg-gradient-to-r from-[#F3E7D7] to-transparent"></div>
-            </div>
 
-            {/* Tabel */}
-            <Table
-              className="custom-table px-10 mb-24"
-              dataSource={sheet.data}
-              columns={columns}
-              rowKey={(key, idx) => `${index}-${idx}`}
-              bordered
-              pagination={{ pageSize: 10 }}
-              size="middle"
-            />
-          </div>
-        ))}
+              <Table
+                className="custom-table px-10 mb-24"
+                dataSource={sheet.data}
+                columns={tableColumns}
+                rowKey={(key, idx) => `${index}-${idx}`}
+                bordered
+                pagination={{ pageSize: 10 }}
+                size="middle"
+              />
+            </div>
+          );
+        })}
 
         {/* Global Styles */}
         <style jsx global>{`
