@@ -65,6 +65,13 @@ const Navbar = () => {
           {/* Desktop Mode */}
           <div className="mx-6 hidden items-center justify-center gap-4 md:flex">
             <div className="relative ">
+              <Link
+                href={"/race-results"}
+                className="mx-2 rounded-3xl px-4 py-2 text-black outline outline-1 outline-black hover:bg-gray-200"
+              >
+                Race Results
+              </Link>
+
               {/* Button Events */}
               <button
                 className="mx-2 rounded-3xl px-4 py-2 text-black outline outline-1 outline-black hover:bg-gray-200"
